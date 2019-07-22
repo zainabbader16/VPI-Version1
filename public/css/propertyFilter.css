@@ -1,0 +1,318 @@
+
+
+/* My css for filtering container */
+
+@media only screen and (max-width: 767px) {
+  #filterContainer {
+    width: 100% !important;
+  }
+
+  #textOnFilter {
+    font-size: 4vw !important;
+  }
+  #filterContainer .btn {
+    font-size: 3vw !important;
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+    .pageDisplay{
+        order:2;
+    }
+}
+
+.modal-dialog{
+    width:100%;
+}
+
+@media only screen and (max-width: 680px) and (min-width: 576px) {
+    .propBrief {
+      visibility: hidden;
+    }
+  }
+
+  @media only screen and (max-width: 1022px) and (min-width: 800px) {
+    .propBrief {
+      visibility: hidden;
+    }
+  }
+  @media only screen and (max-width: 1344px) and (min-width: 1200px) {
+    .propBrief {
+      visibility: hidden;
+    }
+  }
+.container {
+  max-width: inherit;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+#textOnFilter {
+  padding-top: 5vw;
+  text-align: center;
+  font-size: 2.5vw;
+  font-weight: 600;
+}
+
+#filterContainer {
+  background: url("../img/bg2.gif");
+  background-size: cover;
+  width: 55%;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 45;
+  color: white;
+}
+
+.listOfButtons {
+  padding-top: 1rem;
+  margin: auto;
+  width: 100%;
+}
+
+#filterContainer .btn {
+  border: 1px solid white;
+  color: white;
+  font-size: 1.25vw;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.listOfButtons .btn {
+  border-radius: 0%;
+  height: 46.75px;
+}
+.listOfButtons .btn:hover {
+  background-color: rgba(255, 255, 255, 0.78);
+  color: black !important;
+}
+
+#filterContainer a {
+  color: inherit;
+}
+
+.overlayFilterContainer {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(71, 112, 148, 0.78); /* color provided by the supervisor */
+  z-index: 10;
+}
+
+.buySell {
+  margin-top: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: 1000;
+  text-align: center;
+  height: 40px;
+}
+
+.buyLink,
+.sellLink {
+  height: 100%;
+  justify-content: center;
+  display: flex;
+}
+.buySell a {
+  text-decoration: none; /* undeline is removed for <a> in but/sell buttons */
+  background-color: transparent;
+}
+
+.buySell .active {
+  color: black !important;
+  background-color: rgba(255, 255, 255, 0.78);
+}
+
+/* filtering Result section */
+.filterResult .card {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: auto;
+}
+
+.filterResult .card-body {
+  font-size: 0.8rem;
+  padding-top: 0px;
+  padding-left: 5px;
+  padding-right: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.filterResult .propTitle {
+  font-weight: bold;
+  margin-bottom: 0;
+  font-size: 120%;
+}
+
+.filterResult .propAddress {
+  font-size: 110%;
+  margin-top: -2px;
+  margin-bottom: 4px;
+}
+
+.filterResult .propBrief {
+  font-size: 80%;
+}
+
+.filterResult .propDetail {
+  visibility: hidden;
+  font-size: 80%;
+}
+
+.filterResult .favIcon {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  z-index: 100;
+}
+
+/* transition effect for cards */
+.filterResult .card-text {
+  position: relative;
+  z-index: 10;
+}
+.card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height: 32%;
+  transition: 0.6s ease;
+}
+.card img {
+  padding-bottom: 22%;
+}
+.card:hover .overlay {
+  height: 90%;
+}
+.card:hover .propDetail {
+  visibility: visible;
+}
+
+.topFilterResult {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 30px;
+}
+
+.paging {
+  padding: 2rem;
+}
+
+.pageDisplay {
+  font-size: 0.8rem;
+  vertical-align: midlle;
+}
+
+/**************************************************** This is for page web_10 ***************************************/
+
+#web_10{
+    padding:0;
+    background-color: #F4F4F4;
+}
+
+#web_10 .container{
+  padding-right: 15%;
+  padding-left: 15%;
+  padding-top: 50px;
+}
+.topImage img{
+    width:100%;
+}
+
+
+.mainText{
+  font-weight: bold;
+}
+#blueResult{
+  color:#3869B9;
+}
+
+#web_10 .phone {
+  text-align: right;
+  padding:0.3rem 0;    /* setting phone vertically center */
+}
+
+#web_10 .potential {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+#web_10 .selection {
+  margin:5px;
+  background-color:transparent;
+  color:black;
+  border-color: black;
+
+}
+
+#web_10 .active {
+  background-color: #3869B9;
+  color: white;
+}
+
+#web_10 .discriptionText {
+  margin-top:10px;
+}
+
+.formWeb10 {
+
+  padding: 10px 0;
+}
+
+.formWeb10 .dropDownSelection{
+  width:100%;
+  background-color: white;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  height: 34px;
+  -webkit-appearance: none;
+}
+
+.formWeb10 .dropDownSelection:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+.formWeb10 input{
+  width:inherit;
+  border:0;
+}
+
+
+.formWeb10 textarea {
+  border:0;
+}
+
+.formWeb10 .submitButton {
+  padding: 5px;
+}
+
+
+.formWeb10 .submitButton {
+  background-color: #3869B9;
+  color: white;
+  margin-top:10px;
+}
+
+.test{
+  border: 2px solid orange ;
+}

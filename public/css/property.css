@@ -1,0 +1,267 @@
+
+/********************************Gallery*****************************************/
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 5vw);
+    grid-gap: 0.5rem;
+    padding-left:3rem;
+    padding-right:3rem;
+}
+
+.gallery__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__item--1{
+    grid-column-start:1;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 7; 
+}
+
+.gallery__item--2{
+    grid-column-start:10;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 3; 
+}
+
+.gallery__item--3{
+    grid-column-start:10;
+    grid-column-end: 13;
+    grid-row-start: 3;
+    grid-row-end: 5; 
+}
+
+.gallery__item--4{
+    grid-column-start:10;
+    grid-column-end: 13;
+    grid-row-start: 5;
+    grid-row-end: 7; 
+}
+
+/****************************FORMS*************************************/
+
+.main-container {
+    margin-top:2rem; 
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 5vw);
+    grid-gap: 1.5rem;
+    padding-left:3rem;
+    padding-right:3rem;
+}
+
+.connect-container{
+ 
+ grid-column-start:10;
+ grid-column-end: 13;
+ grid-row-start: 1;  
+ grid-row-end: 4; 
+ box-shadow: 0px 3px 6px #888888;
+}
+
+.logo{
+   
+    background-color:#285184;
+    height:50px;
+
+}
+.form-logo{
+    position:relative;
+    left:75px;
+    top:10px;
+}
+.Button{
+    display: inline-block;
+    width:80%;
+    height: 40px;
+    text-align:center;
+    font-size:12px;
+	font-weight:500;
+	padding:4px 20px;
+    text-decoration: none;
+    
+}
+
+.call{
+    margin-top:3rem;
+    margin-bottom:1rem;
+    background-color: #F0F2F5;
+    border:none;
+    transform:translateX(30px);
+    color:#0E2248;
+}
+
+.learn{
+    color:#0E2248;
+    background-color: #F0F2F5;
+    border:none;
+    transform:translateX(30px);
+}
+
+
+/************************Description Container***********************************/
+
+.description-container{
+ grid-column-start:1;
+ grid-column-end: 9;
+ grid-row-start: 4;  
+ grid-row-end: 10; 
+}
+
+.title{
+ grid-column-start:1;
+ grid-column-end: 9;
+ grid-row-start: 1;  
+ grid-row-end: 2;   
+}
+
+h3{
+font-size:20px;
+color:#1C3C5C;
+font-weight:700;  
+
+}
+
+.description-container h4{
+font-size:15px;
+color:#1C3C5C;
+font-weight:light;
+}
+
+
+.button-2{
+   
+height: 40px;
+text-align:center;    
+width:80px;
+color:black;
+background:none;    
+border:1px solid #C3C3C3;  
+border-radius:9px;   
+grid-column-start:9;
+grid-column-end: 9;
+grid-row-start: 1;  
+grid-row-end: 1;       
+}
+
+.button-2:hover{
+color:aliceblue;
+background-color: limegreen;    
+}
+
+h5{
+    font-size: 20px;
+    display:inline-block;
+    font-weight: 400;
+    color:#0E2248;
+}
+
+.description-conatiner p{
+    font-size: 15px;
+    display:inline-block;
+    font-weight: 400;
+    color:#0E2248;
+}
+
+#read-more{
+   font-size: 15px;
+   display:inline-block;
+   font-weight: 400; 
+   color:#3A6FCB;
+   text-decoration: none;
+}
+
+/***********************************GLYPH ICON**********************************************/
+
+.gly-icons-row1{
+grid-column-start:1;
+grid-column-end: 9;
+grid-row-start: 2;  
+grid-row-end: 2;   
+}
+
+.icon-style li{
+    float:left;
+    text-decoration:none;
+    list-style-type: none;
+    padding-left:8rem;
+    color:#0E2248;
+    display:inline-block;
+}
+
+.gly-icons-row2{
+grid-column-start:1;
+grid-column-end: 9;
+grid-row-start: 3;  
+grid-row-end: 3;       
+}
+
+.icon-style h4{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.icon-style p{
+    font-size: 15px;
+    font-weight: bold;
+    color:#1C3C5C;
+}
+
+/**********************************ENQUIRY CONTAINER****************************************/
+.enquiry-container{ 
+ grid-column-start:10;
+ grid-column-end: 13;
+ grid-row-start: 4;  
+ grid-row-end: 10; 
+ box-shadow: 0px 3px 6px #00000041;
+ background-color: #F7F7F7;    
+}
+
+.enquiry-form{
+    width:80%;
+    position:relative;
+    left:32px;
+}
+
+h1{
+    font-size: 17px;
+    display:inline-block;
+    font-weight: 400;
+    color:#0E2248;
+    margin-top:8%;
+    
+}
+
+h2{
+    font-size: 12px;
+    display:inline-block;
+    font-weight: 500;
+    margin-top:6%;
+    color:#0E2248;
+}
+
+input{
+    margin-top:2%;
+    width:229px;
+    height:39px;
+    padding-left: 3px;
+}
+
+.bigger-text{
+    height:117px;
+}
+
+.button-1{
+    margin-top:5%;
+    background-color: #285184;
+    color:white;
+    border:none;
+    width:150px;
+}
+

@@ -1,11 +1,9 @@
-# VPI-Version1
-VPI version 1
 
 # VPI WEBSITE DOCUMENTATION
 
 
 Start Date: 3rd Jun 2019
-Completion Date: 16/07/2019
+Completion Date: 16 Aug 2019
 This project focuses on the creation of **VPI** website (front-end only). The aim is to produce a front-end template which can further be expanded to make it completely functional.
 
 # Features
@@ -33,8 +31,8 @@ Project File:
 The project consists of the following pages:
 
 - home.ejs : introductory page seen when opening the website. Includes latest projects, member forms, partner info etc. 
-- about.ejs: detailed page of company's vision and mission, includes services and team info
-- property.ejs: shows detailed description of a property
+- about.ejs : detailed page of company's vision and mission, includes services and team info
+- property.ejs : shows detailed description of a property
 - propertyFilter.ejs: shows and filters available properties
 - contact.ejs: contact company form
 

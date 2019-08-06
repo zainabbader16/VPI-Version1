@@ -398,12 +398,11 @@ MOBILE & TABLET RESPONSIVENESS
 @media only screen and (min-width: 1441px)
 {
     .jumbotron-heading{
-    font-size: 9rem;
+    font-size: 8rem;
     transform: translateY(-20%);    
   }
    .btn1{
-    position: relative;
-    top: 500px;
+    top: 310px;
     right: 40px; 
   }    
     

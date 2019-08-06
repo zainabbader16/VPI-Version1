@@ -1,9 +1,9 @@
 
-@media screen and (max-width: 575px) {
+/*@media screen and (max-width: 575px) {
     .rwd-break { display: none; }
  }
 
-/*Footer CSS*/
+/*Footer CSS
 
 .wrapper {
   display: flex;  
@@ -99,4 +99,48 @@ line-height: 2;
   width:40em;    
   text-align:right;
       
+}*/
+
+/* Footer CSS */
+.topFooter {
+  background-color: #fafafa;
+  padding-left: 5vw;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+.topFooter #line2 {
+  font-weight: 900;
+  font-size: 2rem;
+  margin-top: -0.6rem;
+}
+
+.topFooter .section {
+  padding-bottom: 2rem;
+}
+
+.topFooter address {
+  margin-bottom: 0;
+}
+.topFooter .icons img {
+  width: 30px;
+  height: auto;
+  background-color: inherit;
+}
+
+.topFooter .branch {
+  font-weight: 900;
+}
+
+.bottomFooter {
+  height: auto !important;
+  background: #eeeeee;
+  padding: 5px;
+  align-items: center !important;
+}
+.bottomFooter ul li {
+  display: inline;
+  margin: 0 !important;
+}
+.bottomFooter ul {
+  margin: 0 !important;
 }

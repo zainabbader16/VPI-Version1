@@ -1,6 +1,7 @@
 
 <%- include('partials/header'); -%>
-<link rel="stylesheet" href="/css/propertyFilter.css">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!-- Body of the webpage -->
   <div class="container bodyOfPage">
@@ -30,9 +31,9 @@
 
     <!-- Top of the search result  -->
     <div class="row d-flex justify-content-between topFilterResult">
-      <div class="col-xs-6  pageDisplay">Displaying 1-4 of 4</div>
-      <div class="col-xs-6"><input placeholder=" Search here!" type="text" />
-        <a href="#" data-toggle="modal" data-target="#filteringID"><i class="fa fa-filter"></i> </a>
+      <div class="col-xs-6  pageDisplay">Displaying <span class="page">1-4 </span> of <span class="page">4</span></div>
+      <div class="col-xs-6">
+        <a href="#" data-toggle="modal" data-target="#filteringID"><i class="fa fa-filter"></i>  Filters</a>
       </div>
     </div>
 
@@ -217,10 +218,7 @@
       </ul>
     </div>
 
-
-
-
-  </div>
+</div>
 
 
   <!-- Modal for login     -->
@@ -231,7 +229,7 @@
         <!-- Modal Header -->
         <div class="modal-header">
           <h4 class="modal-title">Login Form</h4>
-          <button type="button" class="close" data-dismiss="modal">×</button>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
 
         <!-- Modal body -->
@@ -268,7 +266,7 @@
         <!-- Modal Header -->
         <div class="modal-header">
           <h4 class="modal-title">Filter Form</h4>
-          <button type="button" class="close" data-dismiss="modal">×</button>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
 
         <!-- Modal body -->
@@ -316,5 +314,7 @@
       </div>
     </div>
   </div>
+
+
 
 <%- include('partials/footer'); -%>

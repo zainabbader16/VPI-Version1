@@ -1,11 +1,11 @@
-
-
-
 main{
     padding-left:3rem;
     padding-right:3rem;
 }
 
+/*****************************************
+Text Heading & button on Main Image in Carousel
+*******************************************/
 .jumbotron-heading{
     font-family: "Lato", sans-serif;
     padding-bottom: 0.5rem;
@@ -13,21 +13,13 @@ main{
     text-decoration: none; 
     letter-spacing: 0.2rem;
     width:100%;
-    font-size: 5rem;
+    font-size: 4rem;
     display:inline-block;
     font-weight: 800; 
     list-style:none;
     position: absolute;
     top: -100px;
     right: 40px;
-    
-     @include respond (phone) { /*width < 600 */
-        font-size: 3rem;
-    } 
-    
-     @include respond (big-desktop) { /*width < 600 */
-        font-size: 7rem;
-    } 
 }
 
 .btn1{
@@ -36,21 +28,23 @@ main{
     right: 40px;
 }
 
+/**************************
+Main Image button animation
+****************************/
 .btn:link,
 .btn:visited{
-text-decoration:none;
-color: white;
-
-padding: 1rem 2rem;
-display: inline-block;
-transition: all 0.2s;
-position: relative;
-border: solid 0.2rem rgba(255,255,255, 0.9);
+    text-decoration:none;
+    color: white;
+    padding: 1rem 2rem;
+    display: inline-block;
+    transition: all 0.2s;
+    position: relative;
+    border: solid 0.2rem rgba(255,255,255, 0.9);
 }
 
 .btn:hover{
-transform: translateY(-0.3rem);
-box-shadow: 0 1rem 2rem rgba(196, 196, 196, 0.3);
+    transform: translateY(-0.3rem);
+    box-shadow: 0 1rem 2rem rgba(196, 196, 196, 0.3);
 }
 
 .btn::after{
@@ -60,16 +54,21 @@ box-shadow: 0 1rem 2rem rgba(196, 196, 196, 0.3);
 
 .btn:active{
     transform:translate(-0.1rem);
-
     /*btn will look like its going back*/
     box-shadow: 0 0.5rem 1rem rgba(196, 196, 196, 0.3);
 }
 
 
-/*other slider*/
+/**************************
+   Main Large Slider
+****************************/
 .carousel-item{
     height: 85vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size:cover;
+    background-position: center;
 }
 
 .carousel-caption{
@@ -86,82 +85,40 @@ box-shadow: 0 1rem 2rem rgba(196, 196, 196, 0.3);
     letter-spacing: .3rem;
 }
 
-.cover{
-  object-fit: cover;
-  width: 20%;
-  height: 200px;   
+/*************
+small slider
+*************/
+.item{
+margin-top:0.5rem;
+margin-bottom: 0.5rem;    
 }
 
-.gallery-container{
-display: flex;
-flex-wrap: wrap;   
-justify-content: center;
-position:relative;  
-}
 
-/*@media screen and (max-width: 575px) {
-  .cover{
-    width:50%;
-    height:200px;  
-    padding-top: 10px;  
-    padding-bottom:10px;
-    object-fit: cover;
-  }
-    .jumbotron-heading{
-        font-size: 4rem;
-    }
-    .btn{
-        transform:scale(0.8)
-    }
-    .carousal-item{
-        background-position: 50% 50%;
-        background-repeat: none;
-        background-size:cover;
-    }
-     
-}*/
-.img-row{
-padding-top: 3px;
-padding-bottom: 3px;
-}
-
-.img-row:not(.last-child){
-    padding-right: 1px;
-}
-
-.heading-text{
-    color:white;
-    font-weight:bold;
-    background-color:  rgba(136,136,136,0.8);
-}
-
-/******************************FORM SECTION*************************************/
+/***************
+ FORM SECTION
+***************/
 .row{
-margin: 0 auto;
-max-width:140rem;  
+  margin: 0 auto;
+  max-width:140rem;  
 }
+
 clearfix{}
 clearfix::after{
-content:"";
-display:table;
-clear:both;
+  content:"";
+  display:table;
+  clear:both;
 }
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  .row .col-1-of-2{
-    width: 100%;
-  }  
-}
-
-.row [class^="col-"]{
+.row [class^="col-1-"]{
     float:left; 
 }
 
+/*Responsivness for normal to large screens*/
 @media only screen and (min-width: 769px){
-.row [class^="col-"]:not(:last-child) {
+
+.row [class^="col-1-"]:not(:last-child) {
     margin-right: 0.312rem;
-}    
+  }    
 }
 
 .col-1-of-2 {
@@ -174,39 +131,39 @@ clear:both;
 }
 
 .col-1-of-7 {
-    width: -webkit-calc((100% - (0.312rem*6))/7);
-    width: -moz-calc((100% - (0.312rem*6))/7);
-    width: calc((100% - (0.312rem*6))/7);
+    width: -webkit-calc((100% - (0.312rem*5))/6);
+    width: -moz-calc((100% - (0.312rem*5))/6);
+    width: calc((100% - (0.312rem*5))/6);
     height:90px;
     background-size: cover;
     margin-bottom: 4rem;
 }
 
 .col-1-of-5 {
-    width: -webkit-calc((100% - (0.312rem*4))/5);
-    width: -moz-calc((100% - (0.312rem*4))/5);
-    width: calc((100% - (0.312rem*4))/5);
+    width: -webkit-calc((100% - (0.312rem*3))/4);
+    width: -moz-calc((100% - (0.312rem*3))/4);
+    width: calc((100% - (0.312rem*3))/4);
     height:90px;
     background-size: cover;
     margin-bottom: 4rem;
 }
 
-/*col-1-of-1{
-    width:100%;
-    height:90px;
-    text-align:center;
-    background-size: cover;
-}*/
 
-.form-text-left{         
+/*
+Change form background image here by changing url(../img/*put name of image here*);  
+*/  
+.form-text-left{    
 background-image: 
   linear-gradient(to right bottom, 
 		rgba(119,119,119,0.5), 
 		rgba(119,119,119,0.8)),
-      url(../img/chastity-cortijo-604616-unsplash.jpg); 
+        url(../img/chastity-cortijo-604616-unsplash.jpg); 
   color:white;     
 }
 
+/*
+Change form background image here by changing url(../img/*put name of image here*);  
+*/   
 .form-text-right{    
 background-image: linear-gradient(to right bottom, 
 		rgba(255, 255, 255, 0.8), 
@@ -217,9 +174,8 @@ background-image: linear-gradient(to right bottom,
 
 
 .subscribe-form{
-margin-left:10%;
-margin-top:1rem;    
-  
+    margin-left:10%;
+    margin-top:1rem;      
 }
 
 input{
@@ -231,9 +187,9 @@ input{
 }
 
 .btn2{
-margin-left:10%;
-border-radius:10rem;
-margin-top:1rem;    
+    margin-left:10%;
+    border-radius:10rem;
+    margin-top:1rem;    
 }
 
 
@@ -242,73 +198,52 @@ margin-top:1rem;
    border:none;    
 }
 
-/***********************************VIDEO SECTION********************************************/
+/**************
+ VIDEO SECTION
+***************/
 .video-container{
-text-align:center;
-max-width:140rem;     
- 
+   text-align:center;
+   max-width:140rem;     
 }
 
 .vid-row{
-object-fit: cover;
-width:50%;
-height:360px; 
-margin-top:5rem;      
-
+   object-fit: cover;
+   width:50%;
+   height:360px; 
+   margin-top:5rem;      
 }
 
-@media only screen and (max-width: 768px){
-.vid-row{
-width:100%;
-height:260px;       
-}
-}    
 
-
-/***********************************Partner Section*******************************************/
+/***************
+Partner Section
+***************/
 .partner-container{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-text-align: center;
-padding-bottom: 10px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   text-align: center;
+   padding-bottom: 10px;
 }
 
 .partners-logo{
-    padding-top: 3rem;
-   /* padding-left: 5rem;
-    padding-right: 5rem;*/
+    padding-top: 3rem;   
     text-align: center;
 }
 
 
 .logo-item{
-    /*width: auto;
-    height: 85px;
-    margin: auto;
-    justify-content: space-evenly;*/
     width: 60%;
     height:85px;
- 
 }
+
 .last-logo{
     height:85px;
     margin:0 auto;
 }
 
-@media only screen and (max-width: 768px){
- .row .col-1-of-7{
-    width: -webkit-calc((100% - (0.312rem*2))/3);
-    width: -moz-calc((100% - (0.312rem*2))/3);
-    width: calc((100% - (0.312rem*2))/3);
-  } 
- /*.row .col-1-of-5{
-    width: -webkit-calc((100% - (0.312rem*2))/3);
-    width: -moz-calc((100% - (0.312rem*2))/3);
-    width: calc((100% - (0.312rem*3))/2);
-  }  */   
-}   
-/****************************************Headings********************************************/
+/**************
+Headings Styles
+***************/
 h2{
     padding-top:5rem;
     padding-bottom: 0.5rem;
@@ -340,17 +275,19 @@ h4{
 }
 
 #partner-paragraph{
-font-size: 1.5rem;
- margin-left: auto;
- margin-right: auto;
- width: 50em; 
-line-height: 2;     
+    font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em; 
+    line-height: 2;     
 }
 
-/*********************************Pop Up*****************************************/
+/**********
+   Pop Up
+**********/
 .popUp{
     position:fixed;
-    height:100vh;
+    height:100vh;   
     width:100%;
     top:0;
     left:0;
@@ -360,7 +297,7 @@ line-height: 2;
 
 .popup-content{
     width:30%;
-    height:50rem;
+    height:45rem;
     background-color: rgba(255, 255, 255,1);
     box-shadow: 0 2rem 4rem rgba(0,0,0,0.2);
     position:absolute;
@@ -368,15 +305,17 @@ line-height: 2;
     left:50%;
     transform:translate(-50%, -50%);
 }
+
 .popup-img{
- height:44rem;
- width:100%;
+    height:42rem;
+    width:100%;
 }
 
 .btn4{
     position:absolute;
-    top:90%;
-    left:50%;
+    /*top:90%;*/ /*make button appear in bottom centre*/
+    top:97%;
+    left:49%;
     transform:translate(-50%, -50%);
 }
 
@@ -389,10 +328,11 @@ line-height: 2;
     cursor:pointer;
 }
 
+/*Popup animations*/
 .close:link,
 .close:visited{
-text-decoration:none;
-display:inline-block;   
+    text-decoration:none;
+    display:inline-block;   
 }
 
 .close:hover{
@@ -401,3 +341,53 @@ display:inline-block;
 .close:checked{
     visibility:hidden;
 }
+
+
+
+/***************************
+MOBILE & TABLET RESPONSIVENESS
+****************************/
+/*Media uery for Mobile and Tablet screens*/
+@media only screen and (max-width: 768px){
+   /* For mobile phones: */
+  .row .col-1-of-2{
+    width: 100%;
+  }
+  .jumbotron-heading{
+    font-size: 4rem; 
+  }
+    
+  .btn1{
+    position: relative;
+    top: 170px;
+    right: 40px;
+  }
+    
+ .btn:link,
+ .btn:visited{
+    padding: 1rem 1rem; 
+  }
+    
+ .vid-row{
+   width:100%;
+   height:260px;       
+  }   
+
+ .row .col-1-of-7{
+    width: -webkit-calc((100% - (0.312rem*2))/3);
+    width: -moz-calc((100% - (0.312rem*2))/3);
+    width: calc((100% - (0.312rem*2))/3);
+  } 
+ .row .col-1-of-5{
+    width: -webkit-calc((100% - (0.312rem*2))/3);
+    width: -moz-calc((100% - (0.312rem*2))/3);
+    width: calc((100% - (0.312rem*3))/2);
+  } 
+ .popup-content{
+    width:60%;
+    height:40rem; 
+    } 
+  .popup-img{
+    height:35rem;
+}    
+}   

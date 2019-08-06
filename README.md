@@ -1,20 +1,76 @@
-# VPI-Version1
-VPI version 1
 
-/*FOLDERS*/
-Views contain all the EJS/HTML files (if you have a .html file convert it to .ejs) ***partials contain header and footer only****
-
-Public Folder contains all styles (.css currently) and static files including bootstrap and js files
-
-img Folder has all images 
+# VPI WEBSITE DOCUMENTATION
 
 
-/*HOW TO RUN APP*/
-Node js with Express js used currently to run files 
-*Note*use NPM install for both
+Start Date: 3rd Jun 2019
+Completion Date: 16 Aug 2019
+This project focuses on the creation of **VPI** website (front-end only). The aim is to produce a front-end template which can further be expanded to make it completely functional.
 
-app.js file has all paths on localhost:3000 (add on your browser)  ****DO NOT CHANGE THIS FILE FOR NOW****
-To run program on terminal use node app.js or nodemon app.js (install if you don't have these)
+# Features
+- see company and office information 
+- view / filter current VPI residential and commercial projects
+- contact or make project enquiry
+
+# Files & Folders
+
+Project File:
+#VPI-Website master
+
+  **Folders include:**
+
+**app.js** : contains executable functionality for the website (uses Expressjs and Nodejs)
+
+**views**  : contains all pages of the website  
+
+**img**    : contains all images, icons and logos used throughout the website
+
+**public** : contains bootstrap, javaScript, CSS files     
+
+## Pages
+
+The project consists of the following pages:
+
+- home.ejs : introductory page seen when opening the website. Includes latest projects, member forms, partner info etc. 
+- about.ejs : detailed page of company's vision and mission, includes services and team info
+- property.ejs : shows detailed description of a property
+- propertyFilter.ejs: shows and filters available properties
+- contact.ejs: contact company form
+
+## Other Files
+- package.json
+- app.js (contains website functionality eg. page routes, get request and post request)
+Consider the following file path:
+``app.get("/", function(res,req)){...}``
+- "/" points to main home page here similarly "/about" points to the about company page.
+
+## Contribute
+live website: 
+> [http://vpigroup.com.au/](http://vpigroup.com.au/)
+Source code: github.com/.....  
+
+
+
+# RUN CODE
+
+## Online
+> open  [http://vpigroup.com.au/](http://vpigroup.com.au/) in browser
+
+## Powershell or other Linux
+Local execution requires installation of Nodejs [https://nodejs.org/en/](https://nodejs.org/en/)
+
+open linux window and go to project file:
+
+    cd VPI-master-1  or cd (write/drag VPI-Version1-master folder here to get path)
+
+Run app.js file:
+
+    node app.js
+
+Should say 'connected to server' on screen
+## Shut down program
+On command line/Powershell window type:
+>press Ctrl + c 
+
 
 
 

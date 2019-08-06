@@ -348,13 +348,13 @@ h4{
 MOBILE & TABLET RESPONSIVENESS
 ****************************/
 /*Media uery for Mobile and Tablet screens*/
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 767px){
    /* For mobile phones: */
   .row .col-1-of-2{
     width: 100%;
   }
   .jumbotron-heading{
-    font-size: 2rem;
+    font-size: 3rem;
     padding-left: 2rem;
   }
     
@@ -399,6 +399,7 @@ MOBILE & TABLET RESPONSIVENESS
 {
     .jumbotron-heading{
     font-size: 9rem;
+    transform: translateY(-20%);    
   }
    .btn1{
     position: relative;

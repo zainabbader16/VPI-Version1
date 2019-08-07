@@ -1,0 +1,173 @@
+html {
+     font-size: 80% !important;
+}
+
+.centerItems {
+  align-items: center;
+}
+
+
+#web_10 {
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+#web_10 .container {
+  padding-right: 7%;
+  padding-left: 7%;
+  padding-top: 50px;
+}
+.topImage img {
+  width: 100%;
+}
+
+.mainText {
+  font-weight: bold;
+}
+#blueResult {
+  color: #3869b9;
+}
+
+
+
+#web_10 .potential {
+  font-size: 1.3rem;
+  font-weight: bold;
+  min-height: 45px;
+  display: inline-flex;
+  align-items: center;
+}
+
+#web_10 .selection {
+  margin: 5px;
+  background-color: transparent;
+  color: black;
+  border-color: black;
+  max-height: 50px;
+}
+
+#web_10 .active {
+  background-color: #3869b9;
+  color: white;
+}
+
+#web_10 .discriptionText {
+  margin-top: 10px;
+}
+
+.formWeb10 {
+  padding: 40px 0;
+}
+
+.formWeb10 .dropDownSelection {
+  width: 100%;
+  background-color: white;
+  padding: 5px;
+  font-size: 16px;
+  line-height: 1;
+  border: 0;
+  border-radius: 0;
+  height: 34px;
+  -webkit-appearance: none;
+}
+
+.formWeb10 .dropDownSelection:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+.formWeb10 input {
+  width: inherit;
+  border: 0;
+}
+
+.formWeb10 textarea {
+  border: 0;
+}
+
+.formWeb10 .submitButton {
+  padding: 5px;
+}
+
+.formWeb10 .submitButton {
+  background-color: #3869b9;
+  color: white;
+  margin-top: 10px;
+}
+
+#web_10 .card img {
+  padding-bottom: 0;
+}
+
+#web_10 .bottomImages .card-title {
+  font-weight: 900;
+}
+
+#web_10 .bottomImages .card {
+  margin-bottom: 20px;
+}
+
+#web_10 .card-img-overlay .icons img {
+  width: 30px;
+  height: auto;
+  background-color: inherit;
+}
+
+#web_10 .card-img-overlay {
+  background-color: rgba(0, 0, 0, 0.53);
+}
+
+#web_10 .directionImg {
+  width: 20px;
+  height: auto;
+}
+
+/* Footer CSS */
+.topFooter {
+    background-color: #fafafa;
+    padding-left: 5vw;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+  .topFooter #line2 {
+    font-weight: 900;
+    font-size: 2rem;
+    margin-top: -0.6rem;
+  }
+  
+  .topFooter .section {
+    padding-bottom: 2rem;
+  }
+  
+  .topFooter address {
+    margin-bottom: 0;
+  }
+  .topFooter .icons img {
+    width: 30px;
+    height: auto;
+    background-color: inherit;
+  }
+  
+  .topFooter .branch {
+    font-weight: 900;
+  }
+  
+  .bottomFooter {
+    height: auto !important;
+    background: #eeeeee;
+    padding: 5px;
+    align-items: center !important;
+  }
+  .bottomFooter ul li {
+    display: inline;
+    margin: 0 !important;
+  }
+  .bottomFooter ul {
+    margin: 0 !important;
+  }

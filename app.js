@@ -22,8 +22,12 @@ app.get("/property", function(req,res){
    res.render("property", {});
 });
 
-app.get("/propertyFilter", function(req,res){
-   res.render("propertyFilter", {});
+app.get("/residential", function(req,res){
+   res.render("residential", {});
+});
+
+app.get("/commercial", function(req,res){
+   res.render("commercial", {});
 });
 
 app.get("/contactForm", function(req,res){

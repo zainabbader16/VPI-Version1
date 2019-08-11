@@ -67,11 +67,6 @@ h4{
 
 /******section-2*******/
     
-@media only screen and (min-width: 769px){
-.row [class^="col-1-"]:not(:last-child) {
-    margin-right: 25px;    
-}
-    
 .row .col-1-of-2 {
     width: calc((100% - 30px)/2);  /*calculates width of 2 columns*/   
 }
@@ -234,7 +229,7 @@ h4{
 }
 
 [class^="img-"]:not(:last-child){
-     margin-right: 15px;
+    /* margin-right: 15px;*/
 }
       
 .middle{
@@ -303,93 +298,82 @@ h4{
 }
 
 /******************************************MOBILE & TABLET RESPONSIVENESS********************************************************/
+ 
+@media only screen and (max-width: 768px)
+{
+h2{
+font-size:2rem;
+}
+#paragraph-1{   
+font-size:1rem;
+}
+#paragraph-2{   
+font-size:1rem;   
+transform:translateY(-30px);  
+padding-left:2rem;
+}
+.row .col-1-of-2{
+width:100%;
+}
+.vid-row{
+margin-top:0.5rem;
+}
+.vid-container{
+transform:translateY(-20px);
+transform:translateX(20px);
+}
+.card{
+height:450px;
+}
+.card-paragraph{
+font-size:10px;
+}
+.Button{
+font-size:12px;
+padding:2px 10px;
+}
+.Grid-Test{
+width:100%;
+margin-top:5rem;
+}
+.sub-heading-4{
+text-align:center;
+}
+.section-4{
+height:70rem;    
+}
+.section-4 .col-1-of-2 p{
+font-size: 1.5rem;
+}    
+.sub-heading-5{
+width:100%;
+text-align:center;
+}
+.section-5 img{
+width:100%;
+}
+.myButton{
+padding: 5px 7px;
+transform:translateY(-10px);
+}
+.section-5 .col-1-of-2 p{
+font-size:1.25rem;
+}
+}
 
-@media only screen and (max-width: 768px){
-    /*********section 1 & 2***********/
-    h2{
-         font-size: 2rem;
-    }
-
-    #paragraph-1{
-        font-size: 1rem;
-    }
-    
-    #paragraph-2{
-         font-size: 1rem;
-         transform: translateY(-30px);
-         padding-left:2rem;
-    }
-    .row .col-1-of-2{
-        width:100%;
-    }
-    
-    .vid-row{
-        margin-top:0.5rem;
-    }
-    
-    .vid-container{
-        transform: translateY(-20px);
-        transform: translateX(20px);
-    }
-    .card{
-        height:450px;
-    }
-    .card-paragrah
-    {
-        font-size:10px;
-    }
-    .Button{
-    font-size:12px;
-	padding:2px 10px;
-    }
-    
-    /*************image grid***************/
-    .Grid-Test{
-        width:100%;
-        margin-top:5rem;
-    }
-    .sub-heading-4{
-        text-align:center;
-    }
-    .section-4{
-        height: 70rem;
-    }
-    
-    .section-4 .col-1-of-2 p{
-    font-size: 1rem;  
-    }
-    /****************Are You Ready Form*******/
-       .section-5{
-        height: 40rem;
-    }
-    
-    .sub-heading-5
-    {
-        width:100%;
-        /*padding-left:1rem;*/
-        text-align: center;
-    }
-    .section-5 img{
-        width:100%;
-    }
-    
-    .myButton{
-        padding:5px 7px;
-        transform: translateY(-10px);
-    }
-    .section-5 .col-1-of-2 p{
-      font-size: 1.25rem;  
-    }
+@media only screen and (min-width: 769px){
+.row [class^="col-1-"]:not(:last-child) {
+margin-right: 25px;    
 }
     
 @media only screen and (min-width: 1441px){
 .vid-row {
-    height: 370px;    
+height: 370px;    
 }
 .vid-conatiner{
-      transform:translate(-50px);  
-    }
+transform:translate(-50px);  
+}
 .sub-heading-5{
-     padding:10rem;
+ padding:10rem;
 }    
-}    
+} 

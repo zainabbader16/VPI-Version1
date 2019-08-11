@@ -107,7 +107,7 @@ line-height: 2;
   padding-left: 5vw;
   padding-top: 3rem;
   padding-bottom: 4rem;
-  height:200px;    
+  min-height:200px;    
   color:white;    
 }
 .topFooter #line2 {

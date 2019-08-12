@@ -48,16 +48,16 @@ Main Image button animation
     box-shadow: 0 1rem 2rem rgba(196, 196, 196, 0.3);
 }
 
-.btn::after{
-    transform: scaleX(1.4) scaleY(1.6);
+/*.btn::after{
+    /*transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
 }
 
 .btn:active{
     transform:translate(-0.1rem);
-    /*btn will look like its going back*/
+    /*btn will look like its going back
     box-shadow: 0 0.5rem 1rem rgba(196, 196, 196, 0.3);
-}
+}*/
 
 
 /**************************
@@ -391,7 +391,10 @@ MOBILE & TABLET RESPONSIVENESS
 ****************************/
 /*Media uery for Mobile and Tablet screens*/
 @media only screen and (max-width: 767px){
-   /* For mobile phones: */
+    h4{
+        font-size: 1rem;
+    }
+    /* For mobile phones: */
   .row .col-1-of-2{
     width: 100%;
   }

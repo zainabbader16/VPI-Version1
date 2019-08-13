@@ -252,7 +252,9 @@ h4{
 }
 
 
-/************************************************R U READY FORM SECTION 5*****************************************************/
+/************************************************
+R U READY FORM SECTION 5
+*****************************************************/
 .section-5{
     background:#74A8D7; 
     margin-top:5rem;
@@ -297,7 +299,9 @@ h4{
    color:white;    
 }
 
-/******************************************MOBILE & TABLET RESPONSIVENESS********************************************************/
+/*****************************************
+*MOBILE & TABLET RESPONSIVENESS**
+******************************************************/
  
 @media only screen and (max-width: 768px)
 {
@@ -343,7 +347,7 @@ text-align:center;
 height:70rem;    
 }
 .section-4 .col-1-of-2 p{
-font-size: 1.5rem;
+font-size: 1rem;
 }    
 .sub-heading-5{
 width:100%;

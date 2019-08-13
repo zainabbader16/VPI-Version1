@@ -1,0 +1,194 @@
+html {
+     font-size: 98% !important;
+}
+
+@media only screen and (min-width: 991px) {
+  .container {
+    width: 70%; /* may be later need to get reduced */
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .enquiry-container{
+    padding-right: 10px !important;
+  }
+}
+
+
+#bigImg1 {
+  width: 100%;
+}
+#sideImages {
+  padding-left: 2px;
+  padding-right: 5px;
+}
+#displayingImage {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.im {
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+.imageThumb {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  margin-left: -8px;
+}
+
+.main-container {
+  padding-top: 1rem;
+}
+
+.button-2 {
+  width: 5rem;
+  vertical-align: top;
+  border: 1px solid grey;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  filter: invert(100%);
+}
+
+/* specification section */
+#specification {
+  margin-top: 2rem;
+}
+.info {
+  position: relative;
+  top: -8px;
+  left: 1.2rem;
+  font-weight: 900;
+  color: #1c3c5c;
+}
+
+#extraInfo {
+  padding-bottom: 2rem;
+}
+
+/* Form are here */
+.callForm {
+  border: 1px solid #cccccc;
+  margin-bottom: 1rem;
+}
+
+.callForm .body {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+
+.logoheader {
+  background-color: #285184;
+  height: 2.5rem;
+}
+
+.logoheader img {
+  display: block;
+  margin: auto;
+  padding-top: 0.5rem;
+}
+
+.inForm {
+  margin-bottom:0.7rem;
+}
+
+.subBut {
+  min-width: 80%;
+  height: 2rem;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  font-size: 0.7rem;
+  background-color: #f0f2f5;
+  border: 1px solid #cccccc;
+  text-align: center;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.subBut img {
+width:17px;
+}
+
+.enqBut{
+  margin-bottom: 1rem;
+  border:none; 
+  width: 5rem !important;
+  height: 1.7rem;
+  margin-left:10% !important;
+  background-color: #285184;
+  color:white;
+  font-size: 0.75rem;
+}
+
+.enquiry-form {
+  border: 1px solid #cccccc;
+  background-color: #f7f7f7;
+}
+
+.headText {
+  font-size: .7rem;
+  font-weight: 900;
+  padding-top:.8rem;
+  padding-bottom:.2rem;
+}
+
+#askUs {
+  height: 4rem;
+  font-size:0.7rem;
+  margin-bottom: 0.4rem;
+  border: 1px solid #E2E2E2;
+  padding:0.2rem;
+
+
+}
+
+#detail{
+  font-weight: 600;
+  font-size:.6rem;
+  margin-bottom:0.2rem;
+}
+
+.enquiry-container{
+  padding-left: 10px;
+  padding-right: 0px;
+
+}
+
+.enquiry-form .enqElements {
+  font-size: 0.8rem;
+}
+
+.detailInput{
+  width: 80%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.enquiry-form .enqElement {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.enquiry-form input{
+  font-size: 0.7rem;
+  height: 2.2rem;;
+  margin-bottom: 0.5rem;
+  border: 1px solid #E2E2E2;
+  padding:0.2rem;
+}
+
+.button-1 {
+  padding: 0.3rem;
+  padding-right: 0.7rem;
+  padding-left: 0.8rem;
+  color: white;
+  font-size: 1rem;
+  background-color: #285184;
+}

@@ -28,6 +28,7 @@ body {
 }
 .navbar-nav .nav-item{
     /*font-size: 1.25rem;*/
+    font-size:12.8px;
     font-weight:600;
     padding-top:0.7rem;
     padding-bottom:0.3125rem;

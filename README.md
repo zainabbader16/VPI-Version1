@@ -87,5 +87,11 @@ The video are hosted on youtube.com
 Get video link from youtube and put in code following the same format as sample link:
 > src="https://www.youtube.com/embed/cfvPjBVZCTc"  <--cfvPjBVZCTc is your video ID-->
 
+## app.js
+
+This file runs the website.
+Expressjs is used with nodejs
+>app.get("/", function(req, res){}); gets the home page while "/about" gets company page etc.
+
 
 

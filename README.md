@@ -25,6 +25,7 @@ Project File:
 **img**    : contains all images, icons and logos used throughout the website
 
 **public** : contains bootstrap, javaScript, CSS files     
+**partials** : header and footer html (this folder is within the views folder)     
 
 ## Pages
 
@@ -47,6 +48,7 @@ Consider the following file path:
 live website: 
 > [http://vpigroup.com.au/](http://vpigroup.com.au/)
 Source code: github.com/.....  
+free testing host: [https://nameless-wildwood-61574.herokuapp.com] on heroku server 
 
 
 
@@ -71,6 +73,25 @@ Should say 'connected to server' on screen
 On command line/Powershell window type:
 >press Ctrl + c 
 
+
+# Change images and video
+
+DO NOT REMOVE "img/" as this is the specific path to the img folder
+
+Inline comments available in the .ejs files in views folder
+Follow the comments and change images where it says:
+> <!--change image here -->
+><!--change video here -->
+
+The video are hosted on youtube.com 
+Get video link from youtube and put in code following the same format as sample link:
+> src="https://www.youtube.com/embed/cfvPjBVZCTc"  <--cfvPjBVZCTc is your video ID-->
+
+## app.js
+
+This file runs the website.
+Expressjs is used with nodejs
+>app.get("/", function(req, res){}); gets the home page while "/about" gets company page etc.
 
 
 
